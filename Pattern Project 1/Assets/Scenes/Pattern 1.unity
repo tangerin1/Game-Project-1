@@ -6342,7 +6342,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1166239027}
+  m_Mesh: {fileID: 1825677494}
 --- !u!33 &170842843
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -6701,7 +6701,7 @@ MeshCollider:
   m_Mesh: {fileID: 56841562}
 --- !u!33 &177690364
 MeshFilter:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 10
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7936,7 +7936,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1825677494}
+  m_Mesh: {fileID: 732538379}
 --- !u!33 &221644967
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -9819,7 +9819,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 732538379}
+  m_Mesh: {fileID: 1788288908}
 --- !u!33 &318668572
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -37315,7 +37315,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 1491596343}
 --- !u!33 &1470286771
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -51094,6 +51094,7 @@ GameObject:
   - component: {fileID: 2045322861}
   - component: {fileID: 2045322860}
   - component: {fileID: 2045322859}
+  - component: {fileID: 2045322863}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -51219,6 +51220,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2045322863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045322858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706346ad90cfbc6488e032cfdee38f29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2059114091
 GameObject:
   m_ObjectHideFlags: 0
