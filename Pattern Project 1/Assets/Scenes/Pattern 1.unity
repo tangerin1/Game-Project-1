@@ -51102,7 +51102,7 @@ GameObject:
   - component: {fileID: 2045322859}
   - component: {fileID: 2045322863}
   - component: {fileID: 2045322865}
-  - component: {fileID: 2045322864}
+  - component: {fileID: 2045322866}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -51221,8 +51221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045322858}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.017696364, y: 0.031247174, z: -0.000055425266, w: 0.9993551}
-  m_LocalPosition: {x: 0.58967006, y: 0.61, z: -4.099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.095, y: 0.584, z: -4.08017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51239,8 +51239,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 706346ad90cfbc6488e032cfdee38f29, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
---- !u!54 &2045322864
+  m_EditorClassIdentifier: Assembly-CSharp::CameraControls
+  turn: {x: 0, y: 0}
+--- !u!54 &2045322865
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51249,7 +51250,7 @@ Rigidbody:
   m_GameObject: {fileID: 2045322858}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 8.75
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -51265,9 +51266,9 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &2045322865
+--- !u!135 &2045322866
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51286,7 +51287,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2059114091
 GameObject:
@@ -52080,7 +52081,6 @@ Mesh:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2045322862}
   - {fileID: 981933652}
   - {fileID: 1671472601}
   - {fileID: 370899129}
@@ -52132,3 +52132,4 @@ SceneRoots:
   - {fileID: 1713563673}
   - {fileID: 480649658}
   - {fileID: 840831504}
+  - {fileID: 2045322862}
