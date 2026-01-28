@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
-    void OnCollisionEnter(Collision player)
+    void OnTriggerEnter(Collider player)
     {
-        if (player.gameObject.tag == "Player")
+        if (player.CompareTag("Player"))
         {
             SceneManager.LoadScene(1);
         }
