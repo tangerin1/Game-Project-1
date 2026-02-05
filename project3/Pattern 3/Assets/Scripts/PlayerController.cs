@@ -21,7 +21,15 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove = true;
 
-    
+
+    // stuff for shooting arrows
+    public GameObject arrowPrefab;
+    public Transform arrowSpawnPoint;
+    public float arrowSpeed = 40f;
+
+    public Transform dragon; // reference to the dragon to aim at
+
+
     CharacterController characterController;
     void Start()
     {
@@ -72,6 +80,23 @@ public class PlayerController : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+
+        #endregion
+
+        #region Handles Shooting Arrows
+        if (Input.GetMouseButtonDown(0)) // left click or trackpad tap
+        {
+            GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, arrowSpawnPoint.rotation);
+
+            Vector3 targetPos = dragon.position;
+            Vector3 dir = (targetPos - arrowSpawnPoint.position).normalized;
+
+            arrow.transform.forward = dir;
+
+            Rigidbody rb = arrow.GetComponent<Rigidbody>();
+            rb.linearVelocity = dir * arrowSpeed;
+
         }
 
         #endregion
