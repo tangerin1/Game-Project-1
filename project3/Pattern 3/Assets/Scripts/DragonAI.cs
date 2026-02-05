@@ -88,7 +88,7 @@ public class DragonAI : MonoBehaviour
         GameObject fb = Instantiate(fireballPrefab, firePoint.position, firePoint.rotation);
 
         Rigidbody rb = fb.GetComponent<Rigidbody>();
-        rb.velocity = (player.position - firePoint.position).normalized * fireballSpeed;
+        rb.linearVelocity = (player.position - firePoint.position).normalized * fireballSpeed;
 
         Destroy(fb, 2f);
 
