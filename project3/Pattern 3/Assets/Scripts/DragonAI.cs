@@ -26,8 +26,13 @@ public class DragonAI : MonoBehaviour
     private bool movingRight = true;
     private float currentAngle = 0f;
 
+    private float startHeight;
+
     void Start()
     {
+
+        startHeight = transform.position.y;
+
         // Initialize angle based on starting position
         Vector3 offset = transform.position - pivotPoint.position;
         currentAngle = Mathf.Atan2(offset.z, offset.x) * Mathf.Rad2Deg;
@@ -51,7 +56,7 @@ public class DragonAI : MonoBehaviour
 
         float targetAngle = currentAngle + (movingRight ? 180f : -180f);
 
-        int direction;
+        float direction;
 
         while (Mathf.Abs(Mathf.DeltaAngle(currentAngle, targetAngle)) > 1f)
         {
@@ -67,12 +72,11 @@ public class DragonAI : MonoBehaviour
 
             float rad = currentAngle * Mathf.Deg2Rad;
 
-            Vector3 newPos = pivotPoint.position + new Vector3(
-                Mathf.Cos(rad) * radius,
-                transform.position.y, // keep altitude
-                Mathf.Sin(rad) * radius
+            Vector3 newPos = new Vector3(
+                pivotPoint.position.x + Mathf.Cos(rad) * radius,
+                startHeight,
+                pivotPoint.position.z + Mathf.Sin(rad) * radius
             );
-
             transform.position = newPos;
 
             // Face player
