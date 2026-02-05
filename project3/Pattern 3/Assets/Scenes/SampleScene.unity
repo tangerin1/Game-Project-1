@@ -12034,7 +12034,7 @@ PrefabInstance:
     - target: {fileID: 6155405272609320379, guid: cb79301d2d1ea470780c38d919744d10, type: 3}
       propertyPath: dragon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 688412328}
     - target: {fileID: 6155405272609320379, guid: cb79301d2d1ea470780c38d919744d10, type: 3}
       propertyPath: gravity
       value: 4
@@ -20982,6 +20982,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d7fc179f069d43ada23565fbe6b57ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 688412329}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d7fc179f069d43ada23565fbe6b57ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 688412330}
   m_SourcePrefab: {fileID: 100100000, guid: 8d7fc179f069d43ada23565fbe6b57ef, type: 3}
 --- !u!1 &688412327 stripped
 GameObject:
@@ -21006,7 +21009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragonAI
   player: {fileID: 1292018531}
-  fireballPrefab: {fileID: 5424128595382757123}
+  fireballPrefab: {fileID: 6924752095217570672, guid: 1056666410279f141b41d926430b02c2, type: 3}
   firePoint: {fileID: 481848693}
   health: 200
   radius: 1
@@ -21015,6 +21018,27 @@ MonoBehaviour:
   fireballSpeed: 20
   waitTime: 1
   healthBar: {fileID: 1660615350}
+--- !u!135 &688412330
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688412327}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &702105799
 Mesh:
   m_ObjectHideFlags: 0
@@ -93753,11 +93777,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44d1f08e91a71b4eabf73704c7d1d88, type: 3}
---- !u!1 &5424128595382757123 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3401482791981403420, guid: e44d1f08e91a71b4eabf73704c7d1d88, type: 3}
-  m_PrefabInstance: {fileID: 5424128595382757122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7346089038036405110
 PrefabInstance:
   m_ObjectHideFlags: 0
