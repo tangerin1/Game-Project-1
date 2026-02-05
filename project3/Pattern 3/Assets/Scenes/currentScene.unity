@@ -10518,27 +10518,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &458103589 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
-  m_PrefabInstance: {fileID: 759323244}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &458103593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458103589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3118c312db75476b8ad2eb74eb6c2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CandleBehavior
-  flame: {fileID: 2096660083}
-  flameRenderer: {fileID: 0}
-  flameColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  flameEnabled: 1
 --- !u!1 &490674435
 GameObject:
   m_ObjectHideFlags: 0
@@ -20717,9 +20696,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2096660084}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -5568371526223589888, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 458103593}
+      addedObject: {fileID: 1588969164}
   m_SourcePrefab: {fileID: 100100000, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
 --- !u!1 &759835373
 GameObject:
@@ -30877,11 +30856,32 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1588969162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
+  m_PrefabInstance: {fileID: 759323244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1588969163 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
   m_PrefabInstance: {fileID: 759323244}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588969164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588969162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3118c312db75476b8ad2eb74eb6c2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CandleBehavior
+  flame: {fileID: 2096660083}
+  flameRenderer: {fileID: 0}
+  flameColor: {r: 2.996079, g: 2.221662, b: 0.5229005, a: 1}
+  flameEnabled: 1
 --- !u!43 &1636306981
 Mesh:
   m_ObjectHideFlags: 0
@@ -110773,7 +110773,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8962264, g: 0.8260407, b: 0.28324133, a: 0}
+        key0: {r: 1, g: 1, b: 1, a: 0}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
