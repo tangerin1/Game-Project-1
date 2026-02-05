@@ -19599,6 +19599,11 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!23 &705034052 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7202271454713460447, guid: 710f048469aea42bcaee4863ae3f7940, type: 3}
+  m_PrefabInstance: {fileID: 759323244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &722690168
 Mesh:
   m_ObjectHideFlags: 0
@@ -30880,8 +30885,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CandleBehavior
   flame: {fileID: 2096660083}
   flameRenderer: {fileID: 0}
-  flameColor: {r: 2.996079, g: 2.221662, b: 0.5229005, a: 1}
+  flameLight: {fileID: 2135326055}
+  flameColor: {r: 3.132076, g: 2.2237136, b: 0.22160912, a: 1}
   flameEnabled: 1
+  candleRenderer: {fileID: 705034052}
 --- !u!43 &1636306981
 Mesh:
   m_ObjectHideFlags: 0
