@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8310018077072625220}
   - component: {fileID: 1850471889964472179}
   - component: {fileID: 4361324574549069409}
+  - component: {fileID: -6510572645339775930}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 7.2512116, y: 11.061558, z: -31.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -704,3 +705,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.118907005, y: 2.6654794, z: 0.10783527}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6510572645339775930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826604531942088533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c7cd7151135a04fb1ba7da531a34fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArrowDamage
