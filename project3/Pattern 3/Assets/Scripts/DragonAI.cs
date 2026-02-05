@@ -120,6 +120,12 @@ public class DragonAI : MonoBehaviour
         if (!phaseTwo && health < (healthBar.maxHealth * 0.5f))
         {
             phaseTwo = true;
+            CandleBehavior[] candles = FindObjectsByType<CandleBehavior>(FindObjectsSortMode.None);
+
+            foreach (CandleBehavior candle in candles)
+            {
+                candle.ChangeColor(Color.softBlue);
+            }
             Debug.Log("PHASE TWO STARTED");
         }
 

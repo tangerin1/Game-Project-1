@@ -25,13 +25,13 @@ public class CandleBehavior : MonoBehaviour
     }
 
 
-    void ToggleFlame()
+    public void ToggleFlame()
     {
         flameEnabled = !flameEnabled;
         flame.gameObject.SetActive(flameEnabled);
     }
 
-    void ChangeColor(Color color)
+    public void ChangeColor(Color color)
     {
         flameColor = color;
         var main = flame.main;
