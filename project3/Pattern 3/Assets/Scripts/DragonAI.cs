@@ -31,6 +31,7 @@ public class DragonAI : MonoBehaviour
     private float startHeight;
 
     public HealthBar healthBar;
+    private bool phaseTwo = false;
 
 
     void Start()
@@ -49,9 +50,25 @@ public class DragonAI : MonoBehaviour
     {
         while (true)
         {
+            // Move around the circle
             yield return StartCoroutine(MoveHalfCircle());
-            yield return new WaitForSeconds(waitTime);
-            ShootFireball();
+
+            // phase 1: always shoot fireball
+            if (!phaseTwo)
+            {
+                yield return new WaitForSeconds(waitTime);
+                ShootFireball();
+            }
+            else
+            {
+                // phase 2, either dive or do a fireball
+                yield return new WaitForSeconds(waitTime);
+
+                if (Random.value > 0.5f)
+                    ShootFireball();
+                else
+                    yield return StartCoroutine(DiveAttack());
+            }
         }
     }
 
@@ -99,7 +116,14 @@ public class DragonAI : MonoBehaviour
         healthBar.TakeDamage(amount);
         Debug.Log("Dragon health: " + health);
         Debug.Log("HealthBar current: " + healthBar.currentHealth);
-        
+
+        if (!phaseTwo && health < (healthBar.maxHealth * 0.5f))
+        {
+            phaseTwo = true;
+            Debug.Log("PHASE TWO STARTED");
+        }
+
+
         if (health <= 0f)
         {
             Die();
@@ -119,5 +143,61 @@ public class DragonAI : MonoBehaviour
 
         Destroy(fb, 2f);
 
+    }
+
+
+    IEnumerator DiveAttack()
+    {
+        Debug.Log("DIVE ATTACK!");
+
+        // First, rotate to face the player
+        Vector3 targetPos = player.position;
+        Vector3 dir = (targetPos - transform.position).normalized;
+        Quaternion targetRot = Quaternion.LookRotation(dir);
+
+        float turnSpeed = 3f;
+        while (Quaternion.Angle(transform.rotation, targetRot) > 1f)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * turnSpeed);
+            yield return null;
+        }
+
+        // Next, dive toward the player's position at the moment of attack
+        float diveSpeed = 30f;
+        float diveDuration = 0.4f;
+        float t = 0f;
+
+        Vector3 startPos = transform.position;
+        Vector3 diveTarget = new Vector3(targetPos.x, startHeight - 5f, targetPos.z);
+
+        while (t < diveDuration)
+        {
+            t += Time.deltaTime;
+            transform.position = Vector3.Lerp(startPos, diveTarget, t / diveDuration);
+            yield return null;
+        }
+
+        // Finally, return
+        float returnDuration = 1.2f;
+        t = 0f;
+
+        Vector3 returnPos = GetReturnPosition();
+
+        while (t < returnDuration)
+        {
+            t += Time.deltaTime;
+            transform.position = Vector3.Lerp(diveTarget, returnPos, t / returnDuration);
+            yield return null;
+        }
+    }
+
+    Vector3 GetReturnPosition()
+    {
+        float rad = currentAngle * Mathf.Deg2Rad;
+        return new Vector3(
+            pivotPoint.position.x + Mathf.Cos(rad) * radius,
+            startHeight,
+            pivotPoint.position.z + Mathf.Sin(rad) * radius
+        );
     }
 }
