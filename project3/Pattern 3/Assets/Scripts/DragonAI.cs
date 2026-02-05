@@ -13,6 +13,8 @@ public class DragonAI : MonoBehaviour
     // mouth of dragon
     public Transform firePoint;
 
+    public float health = 200f;
+
     [Header("Movement Settings")]
     public float radius = 10f;
     public float moveSpeed = 45f; // turns how many degrees per second?
@@ -27,6 +29,9 @@ public class DragonAI : MonoBehaviour
     private float currentAngle = 0f;
 
     private float startHeight;
+
+    public HealthBar healthBar;
+
 
     void Start()
     {
@@ -85,6 +90,24 @@ public class DragonAI : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        // update health bar
+        healthBar.TakeDamage(amount);
+        Debug.Log("Dragon health: " + health);
+        Debug.Log("HealthBar current: " + healthBar.currentHealth);
+        
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     void ShootFireball()
