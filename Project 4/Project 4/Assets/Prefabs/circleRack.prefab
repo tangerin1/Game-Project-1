@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.327
+      value: 1.107
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.458
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.958
+      value: -2.569
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6902573867230041995, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c9b19d505d795f459fd128a519407b1, type: 2}
     - target: {fileID: 919132149155446097, guid: 538a4a662f264fd4e9ceca80d118a592, type: 3}
       propertyPath: m_Name
       value: circleRack
