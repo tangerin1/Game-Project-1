@@ -1,26 +1,55 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Teleporter : MonoBehaviour
 {
-    public Transform player;
+
+
+
+
+    [SerializeField] private Camera playerCamera;
     public Transform[] teleportPoints;
 
-    private Renderer rend;
+    private bool beenSeen;
+
+    //private Renderer rend;
 
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        //rend = GetComponent<Renderer>();
+        beenSeen = false;
     }
 
     void Update()
     {
-        bool currentlyVisible = rend.isVisible;
+
+        
+        bool currentlyVisible = isVisible();
+
+        
+
+        Debug.Log("Visible: " + currentlyVisible);
+
+        if (currentlyVisible)
+        {
+            beenSeen = true; 
+        }
 
         // teleport if not visible
-        if (!currentlyVisible)
+        if (!currentlyVisible && beenSeen)
         {
             Teleport();
-        }
+        } 
+    }
+
+
+
+    private bool isVisible()
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(playerCamera);
+        return planes.All(planes => planes.GetDistanceToPoint(transform.position) >= 0);
     }
 
     void Teleport()
