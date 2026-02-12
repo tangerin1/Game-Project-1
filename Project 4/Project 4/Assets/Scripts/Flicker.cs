@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Flicker : MonoBehaviour
 {
-   private Light light;
+   public Light light;
    [SerializeField] private float minIntensity = 0f;
    [SerializeField] private float maxIntensity = 1f;
    [SerializeField] private float timeBetween = 0.5f;
