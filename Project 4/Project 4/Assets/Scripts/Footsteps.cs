@@ -3,28 +3,34 @@ public class Footsteps : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] footstepClips;
-    [SerializeField] private float stepInterval = 0.4f; // intervals for each footstep
+
+    [SerializeField] private float minInterval = 0.4f;
+    [SerializeField] private float maxInterval = 0.8f;
 
     private float timer;
+    private float nextStepTime;
     private int lastIndex = -1;
+
+    void Start()
+    {
+        SetNextStepTime();
+    }
 
     void Update()
     {
-        bool isMoving = Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0;
+        timer += Time.deltaTime;
 
-        if (isMoving)
+        if (timer >= nextStepTime)
         {
-            timer += Time.deltaTime;
-            if (timer >= stepInterval)
-            {
-                PlayRandomFootstep();
-                timer = 0f;
-            }
-        }
-        else
-        {
+            PlayRandomFootstep();
+            SetNextStepTime();
             timer = 0f;
         }
+    }
+
+    private void SetNextStepTime()
+    {
+        nextStepTime = Random.Range(minInterval, maxInterval);
     }
 
     private void PlayRandomFootstep()
