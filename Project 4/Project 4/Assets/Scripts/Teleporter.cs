@@ -30,7 +30,7 @@ public class Teleporter : MonoBehaviour
 
         
 
-        Debug.Log("Visible: " + currentlyVisible);
+        //Debug.Log("Visible: " + currentlyVisible);
 
         if (currentlyVisible)
         {
