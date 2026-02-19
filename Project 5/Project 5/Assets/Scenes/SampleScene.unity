@@ -5779,6 +5779,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.039291, y: 3.752066, z: 2.8518167}
   m_Center: {x: -0.019644208, y: -0.07832381, z: -0.015278382}
+--- !u!114 &744488635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744488632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c2b7fee96d54065ade6e391a7c8cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinScreen
+  donut: {fileID: 1888999760}
 --- !u!43 &753909111
 Mesh:
   m_ObjectHideFlags: 0
@@ -19187,6 +19200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6224ad17fe7443a080c58d2155d05d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Donut
+  donutCollected: 0
 --- !u!1 &1892705243
 GameObject:
   m_ObjectHideFlags: 0
@@ -20354,6 +20368,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
       insertIndex: -1
       addedObject: {fileID: 744488634}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 744488635}
   m_SourcePrefab: {fileID: 100100000, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
 --- !u!1 &2004498540
 GameObject:

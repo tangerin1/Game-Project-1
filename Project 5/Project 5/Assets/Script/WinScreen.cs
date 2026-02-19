@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
+    public GameObject donut;
     void OnTriggerEnter(Collider player)
     {
-        if (player.CompareTag("Player"))
+        if (player.CompareTag("Player") && Donut.donutCollected)
         {
             SceneManager.LoadScene(1);
         }
