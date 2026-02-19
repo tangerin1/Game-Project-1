@@ -5753,6 +5753,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52074d01d0862d244ba0eb8be2408627, type: 3}
+--- !u!1 &744488632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
+  m_PrefabInstance: {fileID: 1994497641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &744488634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744488632}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.039291, y: 3.752066, z: 2.8518167}
+  m_Center: {x: -0.019644208, y: -0.07832381, z: -0.015278382}
 --- !u!43 &753909111
 Mesh:
   m_ObjectHideFlags: 0
@@ -9893,15 +9919,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3542526
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7660809
+      value: 1.369305
       objectReference: {fileID: 0}
     - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3542526
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9942,6 +9968,10 @@ PrefabInstance:
     - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401085511037514819, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6596782831629895162, guid: 805f8b2af84264ec1bb2f2ca9f89e311, type: 3}
       propertyPath: lookSpeed
@@ -20320,7 +20350,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 744488634}
   m_SourcePrefab: {fileID: 100100000, guid: edd7191d3ed3f9b4fa27017e40eca615, type: 3}
 --- !u!1 &2004498540
 GameObject:
