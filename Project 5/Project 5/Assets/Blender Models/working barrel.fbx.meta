@@ -1,9 +1,69 @@
 fileFormatVersion: 2
-guid: e23c00dc293034009913460cf310bea2
+guid: d5ac8e5e6cbae4d139837400314f93ee
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_Alpha
+    second: {fileID: 2800000, guid: 089e182e5eb7649b881f7b920b3319cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_BaseColor
+    second: {fileID: 2800000, guid: 1f6f14cd2ecac4924956690d0e413d7c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_Emission
+    second: {fileID: 2800000, guid: 10c701c83037b4e6e8601e3c04e5ae84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_Metallic
+    second: {fileID: 2800000, guid: 90141cd8f10e3494c8b62f7fab0c448e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_Normal
+    second: {fileID: 2800000, guid: 2157c8a0c3b564a97addcebf1a67a038, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.002_Roughness
+    second: {fileID: 2800000, guid: cdef0f2fa83304e15b3a5cd6f5336a84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Alpha
+    second: {fileID: 2800000, guid: 8eabe800c3c22426a8de24037512fd45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_BaseColor
+    second: {fileID: 2800000, guid: 7cc39811e584548deaa76ab821384e27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Emission
+    second: {fileID: 2800000, guid: fc9d4aef1448346b2942486a03a8e060, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Metallic
+    second: {fileID: 2800000, guid: 8b5a6634860224bb48e5a4aa04a50e1c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Normal
+    second: {fileID: 2800000, guid: 6bce73c60568141129da7e4ffbf9b704, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Roughness
+    second: {fileID: 2800000, guid: 915f0a2290589466bb5a2f75f0a44606, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,7 +93,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.25
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -41,8 +101,8 @@ ModelImporter:
     importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -91,7 +151,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0025
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
