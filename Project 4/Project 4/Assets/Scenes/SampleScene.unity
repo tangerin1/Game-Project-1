@@ -4292,6 +4292,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6596782831629895162, guid: 26ab5f50b8676f2459c8d329c0f1b8bb, type: 3}
+      propertyPath: walkSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596782831629895162, guid: 26ab5f50b8676f2459c8d329c0f1b8bb, type: 3}
+      propertyPath: lookXLimit
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596782831629895162, guid: 26ab5f50b8676f2459c8d329c0f1b8bb, type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 239328625}
@@ -6361,10 +6369,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 653c99bc93666684ca45644a030aec5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  light: {fileID: 0}
+  light: {fileID: 1341021607}
   minIntensity: 0
-  maxIntensity: 2
-  timeBetween: 2.44
+  maxIntensity: 30
+  timeBetween: 0.5
 --- !u!1 &1364887906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5d8aa852e0014dc28e4159bace1589a, type: 3}
