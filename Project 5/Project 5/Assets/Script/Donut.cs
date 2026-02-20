@@ -1,10 +1,12 @@
 
 using UnityEngine;
+using TMPro;
 
 public class Donut : MonoBehaviour
 {
     
     public static bool donutCollected = false;
+    public TMP_Text text;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +27,7 @@ public class Donut : MonoBehaviour
         {
             Destroy(gameObject);
             donutCollected = true;
+            text.enabled = false;
         }
     }
 
