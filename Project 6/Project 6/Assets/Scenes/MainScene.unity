@@ -11529,6 +11529,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6596782831629895162, guid: 791bc8b9a113cf74e92085ad8c8e4eab, type: 3}
+      propertyPath: jumpPower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596782831629895162, guid: 791bc8b9a113cf74e92085ad8c8e4eab, type: 3}
       propertyPath: lookXLimit
       value: 100
       objectReference: {fileID: 0}
