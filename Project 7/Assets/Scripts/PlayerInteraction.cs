@@ -1,37 +1,34 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
     public float interactDistance = 3f;
 
-    private TapeRecorder currentRecorder;
+    private IInteractable currentInteractable;
 
     void Update()
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        TapeRecorder recorderLookingAt = null;
+        IInteractable interactableLookingAt = null;
 
         if (Physics.Raycast(ray, out hit, interactDistance))
         {
-            recorderLookingAt = hit.collider.GetComponentInParent<TapeRecorder>();
+            interactableLookingAt = hit.collider.GetComponentInParent<IInteractable>();
         }
-
-        if (currentRecorder != null && currentRecorder != recorderLookingAt)
+        if (currentInteractable != null && currentInteractable != interactableLookingAt)
         {
-            currentRecorder.PlayerHover(false);
+            currentInteractable.OnHoverExit();
         }
-
-        if (recorderLookingAt != null)
+        if (interactableLookingAt != null)
         {
-            currentRecorder = recorderLookingAt;
-            currentRecorder.PlayerHover(true);
+            currentInteractable = interactableLookingAt;
+            currentInteractable.OnHoverEnter();
         }
         else
         {
-            currentRecorder = null;
+            currentInteractable = null;
         }
     }
 }

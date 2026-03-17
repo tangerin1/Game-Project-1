@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class TapeRecorder : MonoBehaviour
+public class TapeRecorder : MonoBehaviour, IInteractable
 {
     [TextArea(4, 10)]
     public string[] logs;
@@ -33,9 +33,14 @@ public class TapeRecorder : MonoBehaviour
         }
     }
 
-    public void PlayerHover(bool hovering)
+    public void OnHoverEnter()
     {
-        playerLooking = hovering;
+        playerLooking = true;
+    }
+
+    public void OnHoverExit()
+    {
+        playerLooking = false;
     }
 
     void OpenCurrentLog()
