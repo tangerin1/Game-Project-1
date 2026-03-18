@@ -8964,9 +8964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6ac0f412e4c4bd1b52c960562c5b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DivorcePaperThought
-  thoughtText: 
-  thoughtTextUI: {fileID: 0}
-  thoughtPanel: {fileID: 0}
+  thoughtText: Divorce papers ... I knew the marrig wasent going great but jeez.
+  thoughtTextUI: {fileID: 1251404283}
+  thoughtPanel: {fileID: 1769854653}
 --- !u!1001 &477564604
 PrefabInstance:
   m_ObjectHideFlags: 0
