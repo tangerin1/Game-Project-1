@@ -13,7 +13,23 @@ Understudy conversation.
 * [How long has he been away from home?]-> awayFromHome
 * [Did something happen at home that is keeping him away?]-> homeWorries
 * [What brought you to his house?]-> toHouse
+* [Did you notice anything while the power was out?]->understudyPowerOut
 * [End Conversation]-> thanksUnderstudy
+
+===understudyPowerOut
+- You: Did you notice anything while the power was out?
+- Will: I didn't see anything, but I heard a gunshot, a clatter, and footsteps. Did something happen?
+
+* You: That's what I'm trying to figure out. 
+    ->understudyOptions
+* <i>(if body was found)</i> You: Dominic was murdered. 
+    ->understudyDominic
+
+===understudyDominic
+
+
+
+->generalOptions
 
 ===awayFromHome
 - You: How long has he been away from home?
