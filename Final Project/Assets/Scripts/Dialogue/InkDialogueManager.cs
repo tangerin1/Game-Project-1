@@ -31,8 +31,11 @@ public class InkDialogueManager : MonoBehaviour
     // how many real dialogue choices we allow on screen
     private const int MaxVisibleChoices = 3;
 
-    // stores the active ink story while a conversation is open
+    // the active ink story while a conversation is open
     private Story _currentStory;
+
+    // the apprentice light handler for the next dialogue 
+    private ApprenticeLightDialogue _pendingApprenticeLightDialogue;
 
     // is dialogue open right now
     private bool _isDialogueOpen;
@@ -80,12 +83,9 @@ public class InkDialogueManager : MonoBehaviour
             return;
         }
 
-        if (_currentStory != null)
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-            {
-                EndDialogue();
-            }
+            EndDialogue();
         }
     }
 
@@ -100,6 +100,7 @@ public class InkDialogueManager : MonoBehaviour
 
         // build a fresh story every time you talk to npc
         _currentStory = new Story(inkJson.text);
+        BindExternalDialogueFunctions();
         _currentStory.onError += HandleStoryError;
         _isDialogueOpen = true;
 
@@ -122,6 +123,11 @@ public class InkDialogueManager : MonoBehaviour
         }
 
         AdvanceDialogue();
+    }
+    
+    public void SetApprenticeLightDialogue(ApprenticeLightDialogue apprenticeLightDialogue)
+    {
+        _pendingApprenticeLightDialogue = apprenticeLightDialogue;
     }
 
     // closes the current dialogue and unfreezes movement
@@ -374,5 +380,27 @@ public class InkDialogueManager : MonoBehaviour
 
         // move into the next line after the branch choice
         AdvanceDialogue();
+    }
+
+    // allows ink to call C# functions inside ink file
+    private void BindExternalDialogueFunctions()
+    {
+        if (_currentStory == null)
+        {
+            return;
+        }
+
+        if (_pendingApprenticeLightDialogue == null)
+        {
+            return;
+        }
+
+        ApprenticeLightDialogue apprenticeLightDialogue = _pendingApprenticeLightDialogue;
+
+        _currentStory.BindExternalFunction("fix_light_1", () => apprenticeLightDialogue.TurnOnLight(1));
+        _currentStory.BindExternalFunction("fix_light_2", () => apprenticeLightDialogue.TurnOnLight(2));
+        _currentStory.BindExternalFunction("fix_light_3", () => apprenticeLightDialogue.TurnOnLight(3));
+
+        _pendingApprenticeLightDialogue = null;
     }
 }
