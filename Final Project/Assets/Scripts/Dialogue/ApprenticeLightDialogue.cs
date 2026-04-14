@@ -6,6 +6,16 @@ using UnityEngine.AI;
 runs the apprentice light choice interaction
 opens an ink dialogue and lets ink trigger the chosen light
 */
+[System.Serializable]
+public class ApprenticeLightOption
+{
+    // the spotlight this option turns on
+    public Light targetLight;
+
+    // where the apprentice should walk for this light
+    public Transform walkTarget;
+}
+
 public class ApprenticeLightDialogue : MonoBehaviour
 {
     // dialogue manager that shows the panel
@@ -20,15 +30,8 @@ public class ApprenticeLightDialogue : MonoBehaviour
     // key used to open the apprentice dialogue
     public Key talkKey = Key.F;
 
-    // the spotlights that can be turned on
-    public Light lightOne;
-    public Light lightTwo;
-    public Light lightThree;
-
-    // the positions for each light to walk to
-    public Transform lightOneTarget;
-    public Transform lightTwoTarget;
-    public Transform lightThreeTarget;
+    // all light choices for this apprentice
+    public ApprenticeLightOption[] lightOptions;
 
     // how close the apprentice has to get before the light turns on
     public float arriveDistance = 0.4f;
@@ -90,25 +93,35 @@ public class ApprenticeLightDialogue : MonoBehaviour
         dialogueManager.StartDialogue(inkJson);
     }
 
-    // lets ink choose which of the three lights to turn on
+    // tells the dialogue manager how many fix light functions this apprentice needs
+    public int GetLightOptionCount()
+    {
+        if (lightOptions == null)
+        {
+            return 0;
+        }
+
+        return lightOptions.Length;
+    }
+
+    // lets ink choose which light to turn on
     public void TurnOnLight(int lightIndex)
     {
-        if (lightIndex == 1)
+        // ink uses one based numbers so shift into array space
+        int optionIndex = lightIndex - 1;
+
+        if (lightOptions == null)
         {
-            TurnOnChosenLight(lightOne, lightOneTarget);
             return;
         }
 
-        if (lightIndex == 2)
+        if (optionIndex < 0 || optionIndex >= lightOptions.Length)
         {
-            TurnOnChosenLight(lightTwo, lightTwoTarget);
             return;
         }
 
-        if (lightIndex == 3)
-        {
-            TurnOnChosenLight(lightThree, lightThreeTarget);
-        }
+        ApprenticeLightOption chosenOption = lightOptions[optionIndex];
+        TurnOnChosenLight(chosenOption.targetLight, chosenOption.walkTarget);
     }
 
     // turns on a specific light given a light object and position to walk to

@@ -28,9 +28,6 @@ public class InkDialogueManager : MonoBehaviour
     // mouse look script so we can stop camera movement during dialogue
     public MouseLookInputSystem mouseLook;
 
-    // how many real dialogue choices we allow on screen
-    private const int MaxVisibleChoices = 3;
-
     // the active ink story while a conversation is open
     private Story _currentStory;
 
@@ -245,9 +242,9 @@ public class InkDialogueManager : MonoBehaviour
         int visibleChoiceCount = Mathf.Min(_currentStory.currentChoices.Count, GetChoiceButtonLimit());
 
         // warning if ink file tries to show too many choices
-        if (_currentStory.currentChoices.Count > MaxVisibleChoices)
+        if (_currentStory.currentChoices.Count > GetChoiceButtonLimit())
         {
-            Debug.LogWarning("too many dialogue choices only the first three will show");
+            Debug.LogWarning("too many dialogue choices only the buttons in the scene will show");
         }
 
         // show one button for each real dialogue choice
@@ -352,7 +349,7 @@ public class InkDialogueManager : MonoBehaviour
             return 0;
         }
 
-        return Mathf.Min(MaxVisibleChoices, closeButtonIndex);
+        return closeButtonIndex;
     }
 
     // logs ink runtime problems in a simple way
@@ -397,9 +394,13 @@ public class InkDialogueManager : MonoBehaviour
 
         ApprenticeLightDialogue apprenticeLightDialogue = _pendingApprenticeLightDialogue;
 
-        _currentStory.BindExternalFunction("fix_light_1", () => apprenticeLightDialogue.TurnOnLight(1));
-        _currentStory.BindExternalFunction("fix_light_2", () => apprenticeLightDialogue.TurnOnLight(2));
-        _currentStory.BindExternalFunction("fix_light_3", () => apprenticeLightDialogue.TurnOnLight(3));
+        for (int i = 1; i <= apprenticeLightDialogue.GetLightOptionCount(); i++)
+        {
+            int lightIndex = i;
+
+            // bind one ink function per inspector light slot
+            _currentStory.BindExternalFunction("fix_light_" + lightIndex, () => apprenticeLightDialogue.TurnOnLight(lightIndex));
+        }
 
         _pendingApprenticeLightDialogue = null;
     }
