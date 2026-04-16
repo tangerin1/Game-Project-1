@@ -167113,6 +167113,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 28c62d7858a8f46f18b7dbf67657eaf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 28c62d7858a8f46f18b7dbf67657eaf8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 28c62d7858a8f46f18b7dbf67657eaf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
