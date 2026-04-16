@@ -27128,6 +27128,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundLadder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27335,15 +27359,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248669244}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -8.028555, y: 1.023, z: -11.945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.607, y: 0.518, z: -11.815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2028723416}
   - {fileID: 393251536}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &251408111
 Mesh:
   m_ObjectHideFlags: 0
@@ -70076,6 +70100,66 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524478532}
     m_Modifications:
+    - target: {fileID: 5457926367661516, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147474005801680335, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 394273470731104468, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 877921267171166606, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008094135874017259, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039975352374354716, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206310502094952378, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2183397484055814151, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276959891148910734, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865807132134622250, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637313074161944897, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803104834330819368, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5840782135980210171, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162161996884005233, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035225843555256973, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7120061465846897765, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
       propertyPath: m_Name
       value: plastic table (3)
@@ -70134,6 +70218,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7603301582757693151, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8517361513792212325, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609682155641522850, guid: 3ebdeb908cf5f114d9b3174b6b0a50b9, type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -81283,6 +81375,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4045707904722825345, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3258320906504962547, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
@@ -81291,9 +81387,37 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1264270834080765489, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -754021289809846433, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -678588488315902003, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
       propertyPath: m_Name
       value: WaterDispenser
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808500269256919150, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868776792506548939, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893485751989193318, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5209800822666549771, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
       propertyPath: m_IsActive
@@ -81303,8 +81427,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5738051118161659745, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5760361245484529064, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8416272007918961125, guid: e09c33747c76d4dd89577221e0182afd, type: 3}
@@ -99717,6 +99849,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundLadder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -115172,20 +115328,20 @@ ReflectionProbe:
   m_TimeSlicingMode: 0
   m_Resolution: 128
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 1.0657995, y: 1.3389323, z: 0.19268559}
-  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_BoxSize: {x: 4.9101267, y: 2.18651, z: 1.535959}
+  m_BoxOffset: {x: 2.0583296, y: 0, z: 0}
   m_NearClip: 0.3
   m_FarClip: 1000
   m_ShadowDistance: 100
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IntensityMultiplier: 1
   m_BlendDistance: 1
   m_HDR: 1
-  m_BoxProjection: 0
+  m_BoxProjection: 1
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
@@ -120200,7 +120356,7 @@ PrefabInstance:
       objectReference: {fileID: 1641020187}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.48
+      value: -23.638733
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -120208,11 +120364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.517
+      value: -2.0781336
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.85667413
+      value: 0.96538365
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -120220,7 +120376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.51585805
+      value: 0.26083434
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -120232,7 +120388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -657.89
+      value: -689.761
       objectReference: {fileID: 0}
     - target: {fileID: 3802829766196032661, guid: 862779696a546407586f409f0f7c4d7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -131132,6 +131288,30 @@ PrefabInstance:
     - target: {fileID: 2155091248539671867, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
       propertyPath: m_Name
       value: roundLadder (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -150393,6 +150573,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundLadder (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -155270,7 +155474,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -160636,6 +160840,30 @@ PrefabInstance:
     - target: {fileID: 2155091248539671867, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
       propertyPath: m_Name
       value: roundLadder (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -170230,6 +170458,30 @@ PrefabInstance:
     - target: {fileID: 2155091248539671867, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
       propertyPath: m_Name
       value: roundLadder
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199377977215585235, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538743406171015199, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163154952536826434, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276101511833851573, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289128563475302608, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019593966716943505, guid: f245152d0ac823c458a8b503edfcdcc1, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
