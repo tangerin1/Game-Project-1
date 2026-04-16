@@ -177485,7 +177485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3375079303598231195}
   m_Layer: 0
-  m_Name: Metal scafolding
+  m_Name: Metal scafolding with wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
