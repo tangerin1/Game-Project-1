@@ -8,7 +8,7 @@ EXTERNAL fix_light_6()
 -> start
 
 === start ===
-Apprentice: Which light should I fix
+Apprentice: Which light do you need fixed?
 * [Fix Light 1] -> light_1
 * [Fix Light 2] -> light_2
 * [Fix Light 3] -> light_3
@@ -18,30 +18,30 @@ Apprentice: Which light should I fix
 
 === light_1 ===
 ~ fix_light_1()
-Apprentice: Placeholder
+Apprentice: On it, light 1 will be fixed momemtarily.
 -> END
 
 === light_2 ===
 ~ fix_light_2()
-Apprentice: Placeholder
+Apprentice: Got it, heading to light 2 now.
 -> END
 
 === light_3 ===
 ~ fix_light_3()
-Apprentice: Placeholder
+Apprentice: Understood, I will take care of light 3.
 -> END
 
 === light_4 ===
 ~ fix_light_4()
-Apprentice: Placeholder
+Apprentice: I see it, light 4 coming up.
 -> END
 
 === light_5 ===
 ~ fix_light_5()
-Apprentice: Placeholder
+Apprentice: All right, on my way to fix light 5.
 -> END
 
 === light_6 ===
 ~ fix_light_6()
-Apprentice: Placeholder
+Apprentice: On my way to light 6!
 -> END
