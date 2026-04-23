@@ -10,31 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.085429
+      value: 7.9562454
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000006231903
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -19.60234
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
-      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.236194
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92436194
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.38151684
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -44.855
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -55,5 +55,52 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5613034617684302223}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5947065073371693351}
   m_SourcePrefab: {fileID: 100100000, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+--- !u!1 &7290353712342881177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5bf515ed9193d460582a5100ef955da5, type: 3}
+  m_PrefabInstance: {fileID: 7633007368697605832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5613034617684302223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290353712342881177}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 4, z: 1.4}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5947065073371693351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7290353712342881177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca64a0e65569485cb0583598d573706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNpc
+  inkJson: {fileID: 4900000, guid: 99f6ac4c188c7004a916a7a9f6eaaa1b, type: 3}
+  dialogueManager: {fileID: 0}
+  interactPrompt: {fileID: 0}
